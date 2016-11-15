@@ -3,6 +3,8 @@
   width: 100%;
   max-width: 60rem;
   margin: 1rem 0.75rem;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .heading {

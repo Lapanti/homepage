@@ -5,6 +5,7 @@
 .header {
   color: var(--mainColorContrasted);
   background: var(--mainColor);
+  border-bottom: 1px solid var(--headerColor);
 }
 
 .nav {
