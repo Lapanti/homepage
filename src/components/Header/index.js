@@ -22,13 +22,13 @@ const Header = (props) => {
           </Link>
           <Link
             className={ styles.link }
-            to="/kuka"
+            to="/kuka/"
           >
             { "Kuka Lauri?" }
           </Link>
           <Link
             className={ styles.link }
-            to="/yhteystiedot"
+            to="/yhteystiedot/"
           >
             { "Yhteystiedot" }
           </Link>
