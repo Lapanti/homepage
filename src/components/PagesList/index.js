@@ -7,16 +7,11 @@ const PagesList = ({ pages }) => {
     <div>
       {
       pages.length
-      ? (
-        <ul>
-          {
-          pages.map((page) => (
-            <li key={ page.title }><PagePreview { ...page } /></li>
-          ))
-        }
-        </ul>
-      )
-      : "No posts yet."
+      ?
+        pages.map((page) => (
+          <PagePreview { ...page } />
+        ))
+      : "Ei kirjoituksia"
     }
     </div>
   )

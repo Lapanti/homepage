@@ -1,0 +1,34 @@
+.headerImageDiv {
+  position: relative;
+  width: 100%;
+  padding-bottom: 40%;
+  overflow: hidden;
+}
+
+.headerImage {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.titleLink {
+  text-decoration: none;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.summary {
+  margin: 0;
+  padding: 0;
+}
+
+.excerpt {
+  margin-bottom: 40px;
+}

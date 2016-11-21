@@ -2,20 +2,17 @@
   --nav-item-padding: 0.5rem;
 }
 
-.header {
-  color: var(--mainColorContrasted);
-  background: var(--mainColor);
-  border-bottom: 1px solid var(--headerColor);
-}
-
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: calc(60rem + (var(--nav-item-padding) * 2));
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   line-height: 3rem;
+  color: var(--mainColorContrasted);
+  background: var(--mainColor);
+  border-bottom: 1px solid var(--headerColor);
 }
 
 .navPart1,

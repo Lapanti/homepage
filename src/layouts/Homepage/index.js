@@ -15,8 +15,7 @@ const Homepage = (props, { collection }) => {
   .slice(0, numberOfLatestPosts)
 
   return (
-    <Page { ...props }>
-      <h2>{ "Latest Posts" }</h2>
+    <Page { ...props } hideTitle={ true } >
       <PagesList pages={ latestPosts } />
     </Page>
   )

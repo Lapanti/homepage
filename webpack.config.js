@@ -18,7 +18,7 @@ export default (config = {}) => {
           variables: {
             mainColor: "#fefefe",
             mainColorContrasted: "#585858",
-            headerColor: "#d0d0d0",
+            headerColor: "#dedede",
           },
         },
       },

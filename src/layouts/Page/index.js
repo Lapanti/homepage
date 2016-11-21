@@ -17,6 +17,7 @@ const Page = (
     header,
     footer,
     children,
+    hideTitle,
   },
   {
     metadata: { pkg },
@@ -45,23 +46,31 @@ const Page = (
   ]
 
   return (
-    <div className={ styles.page }>
-      <Helmet
-        title={ metaTitle }
-        meta={ meta }
-      />
+    <div>
       {
-        head.title &&
-        <h1 className={ styles.heading }>{ head.title }</h1>
+        head.featuredImage &&
+          <div className={ styles.headingImageDiv }>
+            <img className={ styles.headingImage } src={ joinUri(process.env.PHENOMIC_USER_URL, head.featuredImage) } />
+          </div>
       }
-      { header }
-      {
-        isLoading
-        ? <Loading />
-        : <BodyContainer>{ body }</BodyContainer>
-      }
-      { children }
-      { footer }
+      <div className={ styles.page }>
+        <Helmet
+          title={ metaTitle }
+          meta={ meta }
+        />
+        {
+          !hideTitle && head.title &&
+            <h1 className={ styles.heading }>{ head.title }</h1>
+        }
+        { header }
+        {
+          isLoading
+          ? <Loading />
+          : <BodyContainer>{ body }</BodyContainer>
+        }
+        { children }
+        { footer }
+      </div>
     </div>
   )
 }
@@ -75,6 +84,7 @@ Page.propTypes = {
   body: PropTypes.string,
   header: PropTypes.element,
   footer: PropTypes.element,
+  hideTitle: PropTypes.bool,
 }
 
 Page.contextTypes = {

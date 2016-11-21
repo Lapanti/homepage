@@ -14,7 +14,7 @@ const Post = (props) => {
           {
           pageDate &&
           <time key={ pageDate.toISOString() }>
-            { pageDate.toDateString() }
+            { pageDate.toLocaleDateString('fi-FI') }
           </time>
         }
         </header>

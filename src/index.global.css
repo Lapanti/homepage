@@ -74,6 +74,7 @@ body {
 /* minimal styling, prefer removing this and use local styles */
 a {
   color: var(--mainColorContrasted);
+  cursor: pointer;
 }
 
 /* handy for content */

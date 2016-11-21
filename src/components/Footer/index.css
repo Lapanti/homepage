@@ -2,15 +2,6 @@
   color: var(--mainColorContrasted);
   background: var(--mainColor);
   text-align: center;
-}
-
-.phenomicReference {
-  font-size: 0.75rem;
-  opacity: 0.4;
-  color: inherit;
-  text-decoration: none;
-}
-
-.phenomicReferenceName {
-  font-weight: 100;
+  font-size: 0.75em;
+  border-top: 1px solid var(--headerColor);
 }
