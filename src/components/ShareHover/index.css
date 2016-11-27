@@ -1,0 +1,43 @@
+.bubble {
+  position: fixed;
+  display: none;
+  flex: 1;
+  align-content: space-around;
+  width: 70px;
+  height: 35px;
+  padding: 0;
+  background: var(--mainColorContrasted);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin-top: -60px;
+  margin-left: -35px;
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 10px 10px 0;
+  border-color: var(--mainColorContrasted) transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -10px;
+  bottom: -10px;
+  left: 50%;
+}
+
+.bubble > a {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble > a > span {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}

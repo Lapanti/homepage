@@ -1,8 +1,9 @@
 import React, { PropTypes } from "react"
 
 import Page from "../Page"
+import ShareHover from "../../components/ShareHover"
 
-const Post = (props) => {
+const Post = (props, { metadata: { pkg }, }) => {
   // it's up to you to choose what to do with this layout ;)
   const pageDate = props.head.date ? new Date(props.head.date) : null
 
@@ -19,12 +20,19 @@ const Post = (props) => {
         }
         </header>
       }
-    />
+    >
+      <ShareHover __url={ props.__url } twitter={ pkg.twitter }/>
+    </Page>
   )
 }
 
 Post.propTypes = {
   head: PropTypes.object.isRequired,
+  __url: PropTypes.string,
+}
+
+Post.contextTypes = {
+  metadata: PropTypes.object.isRequired,
 }
 
 export default Post

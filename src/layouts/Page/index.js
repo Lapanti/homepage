@@ -66,7 +66,7 @@ const Page = (
         {
           isLoading
           ? <Loading />
-          : <BodyContainer>{ body }</BodyContainer>
+        : <BodyContainer>{ body }</BodyContainer>
         }
         { children }
         { footer }

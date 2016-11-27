@@ -134,6 +134,7 @@
   },
   "dependencies": {
     "moment": "^2.16.0",
+    "react-fontawesome": "^1.4.0",
     "react-headroom": "^2.1.3"
   }
 }

@@ -9,7 +9,7 @@ const PagesList = ({ pages }) => {
       pages.length
       ?
         pages.map((page) => (
-          <PagePreview { ...page } />
+          <PagePreview { ...page } key={page.title}/>
         ))
       : "Ei kirjoituksia"
     }
