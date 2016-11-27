@@ -42,7 +42,7 @@ export default class ShareHover extends React.Component {
     if (this.state.selectedText !== '') {
       const range = selection.getRangeAt(0);
       const rect = range.getBoundingClientRect();
-      div.style.top = rect.top + 'px';
+      div.style.top = (rect.top + window.scrollY) + 'px';
       div.style.left = (rect.left + (rect.width / 2)) + 'px';
       div.style.display = 'flex';
     } else {

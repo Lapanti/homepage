@@ -1,5 +1,5 @@
 .bubble {
-  position: fixed;
+  position: absolute;
   display: none;
   flex: 1;
   align-content: space-around;
