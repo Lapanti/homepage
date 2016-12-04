@@ -1,5 +1,3 @@
-/* eslint-disable no-undef, no-console */
-
 import React, { PropTypes } from 'react'
 import { joinUri } from 'phenomic'
 import styles from './index.css'
@@ -8,7 +6,7 @@ import FontAwesome from 'react-fontawesome'
 export default class ShareHover extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { selectedText: 'Oho se toimii!', };
+    this.state = { selectedText: '', };
     this.fbClick = this.fbClick.bind(this);
     this.showHover = this.showHover.bind(this);
   }
@@ -65,7 +63,7 @@ export default class ShareHover extends React.Component {
           onClick={this.fbClick}
         >
           <FontAwesome
-            ariaLabel='Share on Facebook'
+            ariaLabel='Jaa Facebookissa'
             name='facebook'
             inverse={true}
           />
@@ -78,7 +76,7 @@ export default class ShareHover extends React.Component {
           )}
         >
           <FontAwesome
-            ariaLabel='Share on Twitter'
+            ariaLabel='Jaa Twitterissä'
             name='twitter'
             inverse={true}
           />
